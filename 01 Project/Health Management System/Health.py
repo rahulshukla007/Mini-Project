@@ -1,8 +1,5 @@
 # Health Management System
-
-#prerequisites
-#Create 3 files for diet in same folder
-#Create 3 files for exercise in same folder
+#this system lock your diet & exercise Routine
 
 #---------------------------------written time------------------------------------------#
 def getdate():
@@ -12,60 +9,60 @@ date = getdate()
 
 #---------------------------------written data------------------------------------------#
 def rohan_WD(name,x):
-    with open("rohan_diet.txt", "w") as f:
-        f.write(str(date)+'\n'+(input("write a diet: ")))
+    with open("rohan_diet.txt", "a") as f:
+        f.write(str(date)+'--->'+(input("write a diet: ")) + '\n')
         print("\n----> You have written successfully <------")
 def rohan_WE(name,x):
-    with open("rohan_exercise.txt","w") as f:
-        f.write(str(date)+'\n'+(input("name of exercise: ")))
+    with open("rohan_exercise.txt","a") as f:
+        f.write(str(date)+'--->'+(input("name of exercise: ")) + '\n')
         print("\n----> You have written successfully <------")
 
 def harry_WD(name,x):
-    with open("harry_diet.txt", "w") as f:
-        f.write(str(date)+'\n'+(input("write a diet: ")))
+    with open("harry_diet.txt", "a") as f:
+        f.write(str(date)+'--->'+(input("write a diet: ")) + '\n')
         print("\n----> You have written successfully <------")
 def harry_WE(name,x):
-    with open("harry_exercise.txt","w") as f:
-        f.write(str(date)+'\n'+(input("name of exercise: ")))
+    with open("harry_exercise.txt","a") as f:
+        f.write(str(date)+'--->'+(input("name of exercise: ")) + '\n')
         print("\n----> You have written successfully <------")
 
 def hammad_WD(name,x):
-    with open("hammad_diet.txt", "w") as f:
-        f.write(str(date)+'\n'+(input("write a diet: ")))
+    with open("hammad_diet.txt", "a") as f:
+        f.write(str(date)+'--->'+(input("write a diet: ")) + '\n')
         print("\n----> You have written successfully <------")
 def hammad_WE(name,x):
-    with open("hammad_exercise.txt","w") as f:
-        f.write(str(date)+'\n'+(input("name of exercise: ")))
+    with open("hammad_exercise.txt","a") as f:
+        f.write(str(date)+'--->'+(input("name of exercise: ")) + '\n')
         print("\n----> You have written successfully <------")
 
 #---------------------------------Read data------------------------------------------------#
 def rohan_RD(name,x):
     with open("rohan_diet.txt") as f:
         a=f.read()
-        print(a)
+        print(" Your gathered information \n" + a)
 def rohan_RE(name,x):
     with open("rohan_exercise.txt") as f:
         a = f.read()
-        print(a)
+        print(" Your gathered information \n" + a)
 
 
 def harry_RD(name,x):
     with open("harry_diet.txt") as f:
         a = f.read()
-        print(a)
+        print(" Your gathered information \n" + a)
 def harry_RE(name,x):
     with open("harry_exercise.txt") as f:
         a = f.read()
-        print(a)
+        print(" Your gathered information \n" + a)
 
 def hammad_RD(name,x):
     with open("hammad_diet.txt") as f:
         a = f.read()
-        print(a)
+        print(" Your gathered information \n" + a)
 def hammad_RE(name,x):
     with open("hammad_exercise.txt") as f:
         a = f.read()
-        print(a)
+        print(" Your gathered information \n" + a)
 
 #---------------------------------Take input------------------------------------------------#
 
